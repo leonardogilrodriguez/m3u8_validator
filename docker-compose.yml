@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  flask-m3u8-validator:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5665:5665"
+    restart: always
